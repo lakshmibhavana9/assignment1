@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lakshmi Bhavana Talapaneni - Profile</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Poppins:400,600"> <!-- Added Poppins for headings -->
+    <style>
+        body, html {
+            height: 100%;
+            font-family: "Lora", serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Hero Section with subtle overlay */
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            background-image: url("https://example.com/your-image.jpg"); /* Replace with your image URL */
+            position: relative;
+            height: 100vh;
+        }
+
+        .bgimg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+        }
+
+        .header-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .header-content h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            letter-spacing: 3px;
+        }
+
+        .header-content p {
+            font-size: 24px;
+            font-family: "Lora", serif;
+        }
+
+        .w3-padding {
+            background-color: #FFCC00 !important;
+        }
+
+        /* Navigation */
+        .w3-bar {
+            font-family: 'Poppins', sans-serif;
+            background-color: #333;
+        }
+
+        .w3-bar a {
+            color: white !important;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .w3-bar a:hover {
+            background-color: #ffcc00 !important;
+        }
+
+        /* About Section */
+        #about {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+
+        #about h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        #about p {
+            text-align: justify;
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        /* Contact Section */
+        #contact {
+            background-color: #333;
+            padding: 50px 0;
+            color: white;
+        }
+
+        #contact h5 {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 600;
+            letter-spacing: 2px;
+            text-align: center;
+            color: #ffcc00;
+            margin-bottom: 40px;
+        }
+
+        #contact div {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+
+        .CSbutton {
+            padding: 12px 30px;
+            font-size: 16px;
+            background-color: #0066CC;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .CSbutton:hover {
+            background-color: #33CCFF;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #222;
+            padding: 10px 0;
+            color: white;
+            text-align: center;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div class="w3-bar w3-top w3-black w3-padding w3-large">
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small">Home</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small">About</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small">Contact</a>
+</div>
+
+<!-- Header Section -->
+<div class="bgimg" id="home">
+    <div class="header-content">
+        <h1>Lakshmi Bhavana Talapaneni</h1>
+        <p>Computer Science Enthusiast | Aspiring Innovator</p>
+    </div>
+</div>
+
+<!-- About Section -->
+<div id="about">
+    <div class="w3-content w3-container">
+        <h5>About Me</h5>
+        <p>Hello, I am Lakshmi Bhavana Talapaneni, currently pursuing my master’s degree in Computer Science at George Mason University. Originally from India, I completed my undergraduate degree in Computer Science and Engineering. I have a strong passion for exploring new technologies, and my work in both academic research and personal projects reflects my dedication to the field.</p>
+
+        <p>Apart from technology, I enjoy exploring creative outlets like art, travel, and music, which allow me to stay balanced and motivated. I’m always excited to learn new skills and connect with people from diverse backgrounds.</p>
+
+        <p>This semester, I am looking forward to contributing my knowledge, learning from peers, and making a positive impact through collaboration. Let’s work together to create an inspiring and productive environment for everyone.</p>
+    </div>
+</div>
+
+<!-- Contact Section -->
+<div id="contact">
+    <div class="w3-content w3-container">
+        <h5>Contact</h5>
+        <div>Phone: (+1) 571-567-0209</div>
+        <div>Email: ltalapan@gmu.edu</div>
+        <div><button class="CSbutton" onclick="redirectPage('gmu_cs_department.html')">Computer Science Home Page</button></div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 Lakshmi Bhavana Talapaneni. All rights reserved.</p>
+</footer>
+
+<script>
+    function redirectPage(page) {
+        window.location.href = page;
+    }
+</script>
+</body>
+</html>

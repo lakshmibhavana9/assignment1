@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Science Department</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #006633;
+            color: #FFCC33;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .header-logo {
+            width: 120px;
+            position: absolute;
+            top: 0px; /* Moved logo higher */
+            right: 20px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #FFCC33;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #006633;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+
+        nav a:hover {
+            background-color: #006633;
+            color: #FFCC33;
+            border-radius: 5px;
+        }
+
+        .container {
+            display: none; /* Initially hide all sections */
+            padding: 20px;
+            margin: 0 auto;
+            max-width: 1200px;
+        }
+
+        .column {
+            background-color: #FFCC33;
+            border: 5px solid #006633;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            border-bottom: 2px solid #006633;
+            padding-bottom: 10px;
+            color: #006633;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 2px solid #006633;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #006633;
+            color: #FFCC33;
+        }
+
+        td {
+            background-color: #ffffff;
+        }
+
+        /* Sticky Footer */
+        .footer {
+            background-color: #006633;
+            color: #FFCC33;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+        }
+
+        .footer button {
+            padding: 12px 20px;
+            background-color: #FFCC33;
+            color: #006633;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .footer button:hover {
+            background-color: #006633;
+            color: #FFCC33;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="https://chss.gmu.edu/assets/logos/unvlogo2024-84e9c9d34135fd61dbf855dda9b567f5f4b8eea4f7d91f33086714ed52c119d6.png" alt="GMU Logo" class="header-logo">
+        <h1>George Mason University - Computer Science Department</h1>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('about')">About</a>
+        <a href="javascript:void(0)" onclick="showSection('programs')">Programs</a>
+        <a href="javascript:void(0)" onclick="showSection('courses')">Courses</a>
+        <a href="javascript:void(0)" onclick="showSection('survey')">Survey</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div id="about" class="container">
+        <!-- About Section -->
+        <div class="column">
+            <h2>About the Computer Science Department</h2>
+            <p>The Computer Science department at George Mason University is dedicated to fostering academic excellence, pioneering research, and ensuring student success. Our department is home to over 50 experienced faculty members and boasts state-of-the-art research facilities. We offer a diverse range of undergraduate and graduate programs, each designed to equip students with the skills and knowledge necessary for a successful career in technology and beyond.</p>
+            <p>We emphasize a hands-on approach to learning, providing students with real-world experience through internships, research projects, and collaborations with industry leaders. Our graduates are well-prepared to tackle complex problems and drive innovation in their chosen fields.</p>
+            <ul>
+                <li><strong>Research Areas:</strong> Artificial Intelligence, Cybersecurity, Software Engineering, Data Science, Computer Vision, Human-Computer Interaction, and more.</li>
+                <li><strong>Collaborations:</strong> Active partnerships with leading tech companies including Amazon, Google, and Northrop Grumman.</li>
+                <li><strong>Achievements:</strong> Our program is consistently recognized as one of the top Computer Science departments in the nation, with numerous accolades and high rankings.</li>
+            </ul>
+            <p>Our students have access to numerous industry connections, cutting-edge research opportunities, and a vibrant, supportive campus community that promotes both academic and personal growth.</p>
+        </div>
+    </div>
+
+    <div id="programs" class="container">
+        <!-- Programs Section -->
+        <div class="column">
+            <h2>Masters Programs</h2>
+            <p>George Mason University offers a variety of graduate programs in Computer Science and related fields. Our graduate programs are designed to prepare students for leadership positions in the industry or for academic research careers. The following are the core programs offered:</p>
+            <ul>
+                <li><strong>Master of Science in Computer Science</strong>
+                    <ul>
+                        <li>Focus on advanced algorithms, machine learning, and software engineering.</li>
+                        <li>Research opportunities in AI, big data, and cybersecurity.</li>
+                        <li>Thesis and non-thesis options available.</li>
+                    </ul>
+                </li>
+                <li><strong>Master of Science in Data Analytics Engineering</strong>
+                    <ul>
+                        <li>Data analysis, machine learning, and visualization techniques.</li>
+                        <li>Hands-on training with industry-standard tools and platforms.</li>
+                    </ul>
+                </li>
+                <li><strong>Master of Science in Cybersecurity Engineering</strong>
+                    <ul>
+                        <li>Focus on network security, ethical hacking, and cryptography.</li>
+                        <li>Partnerships with federal agencies for internships and research projects.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>All programs are offered both online and on-campus, providing flexibility for working professionals.</p>
+        </div>
+    </div>
+
+    <div id="courses" class="container">
+        <!-- Courses Section -->
+        <div class="column">
+            <h2>Core Courses for MS in Computer Science</h2>
+            <p>The following core courses are required for the Master of Science in Computer Science. These courses provide the foundation for advanced study in a variety of computer science fields:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Course Code</th>
+                        <th>Course Title</th>
+                        <th>Credits</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>CS 510</td>
+                        <td>Computational Theory</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS 550</td>
+                        <td>Advanced Algorithms</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS 570</td>
+                        <td>Operating Systems</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>CS 580</td>
+                        <td>Introduction to Artificial Intelligence</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Elective courses can be chosen from a wide range of subjects such as Machine Learning, Cryptography, and Cloud Computing. Students also have the option to complete a thesis or capstone project as part of their degree requirements.</p>
+        </div>
+    </div>
+
+    <!-- Survey Section -->
+    <div id="survey" class="footer">
+        <h2>Student Feedback Survey</h2>
+        <p>Your feedback is important to us. By completing this survey, you help us improve the quality of education and student experience in the Computer Science department. Please take a moment to provide your thoughts.</p>
+        <button onclick="window.location.href='cs-department-survey.html'">Take the Survey</button>
+    </div>
+
+    <script>
+        // JavaScript to show the selected section and hide the others
+        function showSection(sectionId) {
+            // Hide all sections
+            const sections = document.querySelectorAll('.container');
+            sections.forEach(section => section.style.display = 'none');
+            
+            // Show the selected section
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Show the 'About' section by default
+        showSection('about');
+    </script>
+
+</body>
+</html>
